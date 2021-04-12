@@ -1,0 +1,8 @@
+package in.sts.springbootrest.entities;
+
+public class Course {
+	
+	private int id;
+	private String title;
+	private String description;
+}

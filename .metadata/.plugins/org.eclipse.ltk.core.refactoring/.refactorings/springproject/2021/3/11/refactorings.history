@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;springproject/src/main/java/VehicleConfig.xml&apos; to &apos;VehicleConfig1.xml&apos;" description="Rename resource &apos;VehicleConfig.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/VehicleConfig.xml" name="VehicleConfig1.xml" stamp="1615375692154" updateReferences="true"/>
+</session>

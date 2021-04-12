@@ -1,0 +1,55 @@
+package in.sts.hibfetch;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistry;
+import org.hibernate.service.ServiceRegistryBuilder;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+       Configuration config = new Configuration().configure().addAnnotatedClass(Student.class).addAnnotatedClass(Laptop.class);
+       
+       ServiceRegistry serviceregistry = new ServiceRegistryBuilder().applySettings(config.getProperties()).buildServiceRegistry();
+       
+       SessionFactory sessionfactory = config.buildSessionFactory(serviceregistry);
+       
+       //session1 starts here
+       Session session1 =  sessionfactory.openSession();
+       
+       session1.beginTransaction();
+       
+       System.out.println("====session1 starts here=========");
+       Student stdnt1 = (Student)session1.get(Student.class, 1);
+       
+       System.out.println(stdnt1);
+       
+       Student stdnt2 = (Student)session1.get(Student.class, 1);
+       
+       System.out.println(stdnt2);
+       
+       System.out.println("=======session1 ends here======");
+       session1.getTransaction().commit();
+       session1.close();   
+       
+       //session2 starts here
+       Session session2 =  sessionfactory.openSession();
+       
+       session2.beginTransaction();
+       System.out.println("===========session2 starts here==========");
+       Student stdnt3 = (Student)session2.get(Student.class, 1);
+       
+       System.out.println(stdnt3);
+       
+       Student stdnt4 = (Student)session2.get(Student.class, 1);
+       
+       System.out.println(stdnt4);
+       
+       System.out.println("==========session2 ends here===========");
+       session2.getTransaction().commit();
+       session2.close();   
+       
+    }
+}

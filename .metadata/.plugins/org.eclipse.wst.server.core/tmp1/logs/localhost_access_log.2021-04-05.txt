@@ -1,0 +1,2 @@
+127.0.0.1 - - [05/Apr/2021:15:45:38 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [05/Apr/2021:15:45:41 +0530] "GET /springmvc5-hibernate5-jsp-mysql-example/ HTTP/1.1" 200 52

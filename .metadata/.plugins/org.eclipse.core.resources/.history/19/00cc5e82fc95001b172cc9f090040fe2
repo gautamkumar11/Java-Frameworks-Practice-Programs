@@ -1,0 +1,5 @@
+package in.sts.springbootrest.entities;
+
+public class Course {
+
+}

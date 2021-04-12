@@ -1,0 +1,69 @@
+package in.sts.springbootrest.services;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import in.sts.springbootrest.entities.Course;
+
+@Service
+public class CourseServiceImpl implements CourseService {
+
+	List<Course> list;
+	
+	public CourseServiceImpl() {
+		list = new ArrayList<>();
+		list.add(new Course(145,"Java Core Courses", "This Course is for java learner"));
+		list.add(new Course(146,"Spring boot Courses", "This Course is for spring boot learner"));
+	}
+
+	@Override
+	public List<Course> getCourses() {
+		
+		return list;
+	}
+
+	@Override
+	public Course getCourse(int courseId) {
+		Course c = null;
+		for(Course course : list)
+		{
+			if(course.getId()==courseId)
+			{
+				c = course;
+				break;
+			}
+		}
+		return c;
+	}
+
+	@Override
+	public Course addCourse(Course course) {
+		list.add(course);
+		return course;
+	}
+
+	@Override
+	public Course updateCourse(Course course) {
+		list.add(course);
+		return course;
+	}
+
+	@Override
+	public Course deleteCourse(int courseId) {
+		Course c = null;
+		for(Course course:list)
+		{
+			if(course.getId()==courseId)
+			{
+				c = course;
+				break;
+			}
+		}
+		return c;
+	}
+	
+	
+
+}

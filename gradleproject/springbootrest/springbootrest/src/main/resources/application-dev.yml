@@ -1,0 +1,13 @@
+server: 
+  port: 8070
+  
+spring: 
+  jpa.hibernate.ddl-auto: none
+  datasource: 
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: root
+    message: port 8070 dev
+#logging.level.root: WARN
+
+  

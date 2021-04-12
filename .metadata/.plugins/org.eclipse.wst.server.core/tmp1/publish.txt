@@ -1,0 +1,7 @@
+#Tomcat publish data
+#Mon Apr 05 15:45:20 IST 2021
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\gautam.kumar\\caches\\modules-2\\files-2.1\\org.apache.tomcat.embed\\tomcat-embed-websocket\\9.0.44\\3208d52d84bf2839f063a81382f9dc49f4864bc9\\tomcat-embed-websocket-9.0.44.jar=WEB-INF/lib/tomcat-embed-websocket-9.0.44.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\gautam.kumar\\caches\\modules-2\\files-2.1\\org.springframework\\spring-web\\5.3.5\\8233c67b3f33f619f6f8f34cc0f56e01a00e136e\\spring-web-5.3.5.jar=WEB-INF/lib/spring-web-5.3.5.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\gautam.kumar\\.m2\\repository\\org\\springframework\\spring-web\\5.1.5.RELEASE\\spring-web-5.1.5.RELEASE.jar=WEB-INF/lib/spring-web-5.1.5.RELEASE.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\gautam.kumar\\caches\\modules-2\\files-2.1\\org.apache.tomcat\\tomcat-jasper\\9.0.44\\6e5e7e5fb995ecd0df60706271a2584681330af7\\tomcat-jasper-9.0.44.jar=WEB-INF/lib/tomcat-jasper-9.0.44.jar
+org.eclipse.jst.j2ee.server\:/binary\:C\:\\Users\\gautam.kumar\\caches\\modules-2\\files-2.1\\org.apache.tomcat\\tomcat-jasper-el\\9.0.44\\113f44ef707b8b19be32b51e4abc193308b1e9a7\\tomcat-jasper-el-9.0.44.jar=WEB-INF/lib/tomcat-jasper-el-9.0.44.jar

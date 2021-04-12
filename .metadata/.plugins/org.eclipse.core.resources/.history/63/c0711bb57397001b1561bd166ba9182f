@@ -1,0 +1,20 @@
+package in.sts.springdemoproject;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import in.sts.springdemoproject.config.EmployeeConfig;
+import in.sts.springdemoproject.entities.Employee;
+
+public class TestApp {
+
+	public static void main(String[] args) {
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(EmployeeConfig.class);
+		Employee empref = context.getBean(Employee.class);
+		empref.setId(1);
+		empref.setName("Gautam Kumar");
+		empref.setAddress("Nagpur");
+		
+		System.out.println(empref.hashCode());
+	}
+
+}

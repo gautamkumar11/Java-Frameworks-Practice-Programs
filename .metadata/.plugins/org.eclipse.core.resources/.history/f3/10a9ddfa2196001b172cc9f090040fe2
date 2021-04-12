@@ -1,0 +1,11 @@
+package in.sts.springbootrest.repositories;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import in.sts.springbootrest.entities.Course;
+
+public interface CourseRepository extends JpaRepository<Course, Integer> {
+
+	
+
+}

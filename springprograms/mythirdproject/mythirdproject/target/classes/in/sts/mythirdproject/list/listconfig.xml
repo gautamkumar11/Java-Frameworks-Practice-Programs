@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:p="http://www.springframework.org/schema/p"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans
+	    http://www.springframework.org/schema/beans/spring-beans.xsd
+	    http://www.springframework.org/schema/context
+	    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean id = "student" class="in.sts.mythirdproject.list.Student">
+		<constructor-arg value ="101"></constructor-arg>
+		<constructor-arg value="Gautam"></constructor-arg>
+		<constructor-arg value="IT"></constructor-arg>
+		<constructor-arg name="subjects">
+			<list>
+				<value>Math</value>
+				<value>Hindi</value>
+				<value>English</value>
+			</list>
+		</constructor-arg>
+		
+	</bean>
+		
+
+
+</beans>

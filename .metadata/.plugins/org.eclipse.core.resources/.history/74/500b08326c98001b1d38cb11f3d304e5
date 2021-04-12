@@ -1,0 +1,20 @@
+package in.sts.springbootrest.config;
+
+import javax.sql.DataSource;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Configuration
+@Profile(value = "test")
+public class ProfileConfig {
+
+	  @Bean
+	  @GetMapping("/testing")
+	    public String testHiveDataSource() {
+	        System.out.println("DataSource bean created for Test");
+	        return "DataSource bean created for Test";
+	    }
+}

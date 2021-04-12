@@ -1,0 +1,12 @@
+package in.sts.springbootrest.services;
+
+import java.util.List;
+
+import in.sts.springbootrest.entities.Course;
+
+public interface CourseService {
+
+	public List<Course> getCourses();
+	
+	public Course getCourse(int courseId);
+}
