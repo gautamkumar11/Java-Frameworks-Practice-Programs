@@ -1,7 +1,0 @@
-package in.sts.springbootrest.repositories;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public class CourseRepository implements JpaRepository<T, ID> {
-
-}

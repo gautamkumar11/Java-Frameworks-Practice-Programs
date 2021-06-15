@@ -23,7 +23,7 @@ public class App
     	tname.setLname("Yadav");
     	
     	Teacher tobj = new Teacher();
-    	tobj.setId(102);
+    	tobj.setId(101);
     	tobj.setName(tname);
     	tobj.setMob(7028870790d);
     	tobj.setDepartment("IT");

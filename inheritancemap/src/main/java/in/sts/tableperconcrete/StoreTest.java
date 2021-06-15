@@ -11,31 +11,32 @@ public class StoreTest {
 
 	public static void main(String[] args) {
 Configuration configuration = new Configuration().configure("hibernate.cfg.xml");
-    	configuration.addAnnotatedClass(Employee.class).addAnnotatedClass(Regular_Employee.class).addAnnotatedClass(Contract_Employee.class);
+    	configuration.addAnnotatedClass(Employee_tpc.class).addAnnotatedClass(Regular_Employee_tpc.class).addAnnotatedClass(Contract_Employee_tpc.class);
+    	
     	ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().applySettings(configuration.getProperties()).buildServiceRegistry();
     	
 
     	SessionFactory sessionFactory = configuration.buildSessionFactory(serviceRegistry);
     	 
-        Session session=sessionFactory.openSession();  
+        Session session = sessionFactory.openSession();  
           
-         Transaction t=session.beginTransaction();    
+        Transaction t = session.beginTransaction();    
             
-            Employee e1=new Employee();    
-            e1.setName("Gaurav Chawla");    
-            e1.setId(1);  
+            Employee_tpc e1=new Employee_tpc();    
+            e1.setName("Gautam Kumar");    
+           // e1.setId(4);  
             
-            Regular_Employee e2=new Regular_Employee();    
-            e2.setName("Vivek Kumar");    
+            Regular_Employee_tpc e2=new Regular_Employee_tpc();    
+            e2.setName("Rahul Kumar");    
             e2.setSalary(50000);    
             e2.setBonus(5); 
-            e2.setId(2);
+          //  e2.setId(5);
                 
-            Contract_Employee e3=new Contract_Employee();    
-            e3.setName("Arjun Kumar");    
+            Contract_Employee_tpc e3=new Contract_Employee_tpc();    
+            e3.setName("Rakesh Kumar");    
             e3.setPay_per_hour(1000);    
             e3.setContract_duration("15 hours");    
-            e3.setId(3);  
+         //   e3.setId(6);  
             
             session.persist(e1);    
             session.persist(e2);    
